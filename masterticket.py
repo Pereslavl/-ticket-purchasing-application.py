@@ -7,14 +7,13 @@ tickets_remaining = 100
 print("There are {} tickets remaining.".format(tickets_remaining))
 
 # Gather the user's name and assign it to a new variable
-name_user = input("What is your name? ")
-
+name = input("What is your name? ")
 
 # Prompt the user by name and ask how many tickets they  would like?
-number_of_tickets = int(input("How many tickets do you need? "))
-
+num_tickets = input("How many tickets would you like, {}?  ".format(name))
+num_tickets = int(num_tickets)
 # Calculate the price (number of tickets multiplied by price) and assign variable
-total_cost = number_of_tickets * TICKET_PRICE
+amount_due = num_ickets * TICKET_PRICE
 
 # Output on the screen result
-print(total_cost)
+print("The total due is $ {}".format(amount_due))
