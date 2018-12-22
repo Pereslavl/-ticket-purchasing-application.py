@@ -3,6 +3,9 @@ TICKET_PRICE = 10
 
 tickets_remaining = 100
 
+
+# Run this code continuosly until we run of tickets
+
 # Output how many tickets are remaining using the tickets_remaining variable
 print("There are {} tickets remaining.".format(tickets_remaining))
 
@@ -33,3 +36,6 @@ if should_proceed.lower() == "y":
 else:
     # Thanks them by name
     print("Thank you anyways, {}!".formate(name))
+
+
+# Notify user that tickets are sold out.
