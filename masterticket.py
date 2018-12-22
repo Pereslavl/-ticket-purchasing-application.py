@@ -20,17 +20,16 @@ print("The total due is $ {}".format(amount_due))
 
 
 # Prompt to user if they want to proceed. Y/N
-question = input("Do you want to proceed?")
+should_proceed = input("Do you want to proceed? Y/N")
 
 # if they want to proceed
-if question = "y":
-    print("SOLD!, to confirm purchase")
+if should_proceed.lower() == "y":
      # print out to the screen "SOLD!" to confirm purchase
-else:
-    print("Buy!")
- # and then decrement the tickets remaining by the number of tickets purchased
-residue = tickets_remaining - amount_due
-print(residue)
+    #TODO: Gather credit card information and process it.
+    print("SOLD!")
+    # and then decrement the tickets remaining by the number of tickets purchased
+    tickets_remaining - num_tickets
 # Otherwise...
-
-     # Thanks them by name
+else:
+    # Thanks them by name
+    print("Thank you anyways, {}!".formate(name))
