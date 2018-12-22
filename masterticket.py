@@ -13,7 +13,7 @@ name = input("What is your name? ")
 num_tickets = input("How many tickets would you like, {}?  ".format(name))
 num_tickets = int(num_tickets)
 # Calculate the price (number of tickets multiplied by price) and assign variable
-amount_due = num_ickets * TICKET_PRICE
+amount_due = num_tickets * TICKET_PRICE
 
 # Output on the screen result
 print("The total due is $ {}".format(amount_due))
