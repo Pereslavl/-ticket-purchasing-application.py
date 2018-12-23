@@ -9,7 +9,12 @@ while tickets_remaining >= 1:
     # Except a ValueEror to happen and handle it appropriately...remember test it  out:
     try:
         num_tickets = int(num_tickets)
+
+    # Raise a ValueError if the requst is for more tickets  than are availiable
+    if num_tickets > tickets_remaining:
+        raise ValueError("There are only {} tickets remaining".format(tickets_remaining))
     except ValueError:
+        # Include the error text int the output
         print("Oh no that no value !!!!!")
     else:
         amount_due = num_tickets * TICKET_PRICE
