@@ -11,13 +11,13 @@ while tickets_remaining >= 1:
         num_tickets = int(num_tickets)
     except ValueError:
         print("Oh no that no value !!!!!")
-
-    amount_due = num_tickets * TICKET_PRICE
-    print("The total due is $ {}".format(amount_due))
-    should_proceed = input("Do you want to proceed? Y/N")
-    if should_proceed.lower() == "y":
-        print("SOLD!")
-        tickets_remaining - num_tickets
     else:
-        print("Thank you anyways, {}!".formate(name))
+        amount_due = num_tickets * TICKET_PRICE
+        print("The total due is $ {}".format(amount_due))
+        should_proceed = input("Do you want to proceed? Y/N")
+        if should_proceed.lower() == "y":
+            print("SOLD!")
+            tickets_remaining - num_tickets
+        else:
+            print("Thank you anyways, {}!".formate(name))
 print("Sorry the tickets are all sold out!!!")
