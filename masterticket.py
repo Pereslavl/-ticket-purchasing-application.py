@@ -13,9 +13,9 @@ while tickets_remaining >= 1:
     # Raise a ValueError if the requst is for more tickets  than are availiable
     if num_tickets > tickets_remaining:
         raise ValueError("There are only {} tickets remaining".format(tickets_remaining))
-    except ValueError:
+    except ValueError as err:
         # Include the error text int the output
-        print("Oh no that no value !!!!!")
+        print("Oh no that no value {}!!!!! Please try again ".format(err))
     else:
         amount_due = num_tickets * TICKET_PRICE
         print("The total due is $ {}".format(amount_due))
